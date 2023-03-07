@@ -16,6 +16,7 @@ bool CreateFileWithRandomNumbers(const std::string& fileName, const int numbersC
 {
     std::ofstream File;
     File.open(fileName);
+
     if (!File.is_open())
     {
         throw errorFileOpening;
